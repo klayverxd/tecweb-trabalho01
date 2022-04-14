@@ -1,0 +1,65 @@
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  
+}
+
+header{
+  /* background-color: red; */
+}
+
+.main-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(163, 163, 163);
+  padding: 5px 20px;
+
+}
+
+#logo {
+  width:50px;
+  height:50px;
+}
+
+#input-text {
+  margin-left: 10px;
+
+}
+
+body{
+  background-color: blue;
+}
+.lancamentos{
+  background-color: rgb(218, 218, 218);
+}
+
+
+.header-lancamentos{
+  text-align: center;
+  padding-top: 10px;
+}
+
+.container-lancamentos{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.section-emDestaque {
+  background-color: #fff;
+}
+
+.section-emDestaque header{
+  display:flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+}
+
+.filmes {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+}
+
+footer{
+  background-color: green;
+}
