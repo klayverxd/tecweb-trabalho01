@@ -38,6 +38,10 @@ time, mark, audio, video {
 
 #input-text {
   margin-left: 10px;
+  margin-right: 30px;
+  padding: 8px 25px;
+  background-color: rgb(163, 163, 163);
+  border-color: black;
 }
 
 body{
@@ -56,7 +60,7 @@ body{
 .container-lancamentos {
   display: flex;
   justify-content: space-around;
-  padding: 20px;
+  padding: 40px ;
 }
 
 .container-lancamentos img {
@@ -78,6 +82,43 @@ body{
   justify-content: space-between;
   padding: 20px 100px;
 }
+
+.carregar{
+    display: flex;
+    justify-content: right;
+    padding: 20px 100px;
+}
+
+.botao-carregar{
+    background-color: #6d6d6d;
+    color: white;
+    padding: 5px;
+}
+
+.avaliacoes {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+
+.card img{
+    border-radius: 50%;
+}
+
+.section-makingof{
+    background-color: rgb(218, 218, 218);
+    padding-top: 10px;
+}
+
+.header-makingof{
+    padding-left: 100px;
+}
+
+.makingof {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+  }
 
 footer{
   background-color: green;
