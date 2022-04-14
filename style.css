@@ -1,9 +1,26 @@
-* {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  
-}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-header{
-  /* background-color: red; */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	vertical-align: baseline;
 }
 
 .main-header{
@@ -11,37 +28,39 @@ header{
   justify-content: space-between;
   align-items: center;
   background-color: rgb(163, 163, 163);
-  padding: 5px 20px;
+  padding: 10px 28px;
 
 }
 
 #logo {
-  width:50px;
-  height:50px;
+  width: 140px;
 }
 
 #input-text {
   margin-left: 10px;
-
 }
 
 body{
   background-color: blue;
 }
+
 .lancamentos{
   background-color: rgb(218, 218, 218);
 }
 
-
-.header-lancamentos{
+.header-lancamentos {
   text-align: center;
   padding-top: 10px;
 }
 
-.container-lancamentos{
+.container-lancamentos {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 20px;
+}
+
+.container-lancamentos img {
+  margin-right: 26px;
 }
 
 .section-emDestaque {
@@ -62,4 +81,7 @@ body{
 
 footer{
   background-color: green;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
