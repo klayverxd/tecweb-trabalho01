@@ -130,6 +130,7 @@ footer{
 .novidades {
   display: flex;
   padding: 20px 100px;
+  background-color: white;
 }
 .avaliacao {
   display: flex;
@@ -148,5 +149,13 @@ footer{
 }
 .sobre p{
   padding-top: 20px;
+}
+#algumaCoisa p{
+  display: inline-block;
+  background-color: #6d6d6d;
+  border-radius: 25px ;
+  padding: 5px;
+  margin-top: 10px;
+  color: #fff;
 }
 
