@@ -126,3 +126,18 @@ footer{
   justify-content: space-between;
   padding: 20px;
 }
+
+.novidades {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+
+}
+.avaliacao {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px ;
+  border-bottom: solid 1px;
+  border-color: #6d6d6d;
+}
+
