@@ -129,15 +129,24 @@ footer{
 
 .novidades {
   display: flex;
-  justify-content: space-between;
   padding: 20px 100px;
-
 }
 .avaliacao {
   display: flex;
-  justify-content: space-around;
-  padding: 40px ;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-bottom: solid 1px;
   border-color: #6d6d6d;
+}
+.avaliacao div {
+  padding-left: 20px;
+}
+
+.sobre {
+  width: 75%;
+  padding-left: 20px;
+}
+.sobre p{
+  padding-top: 20px;
 }
 
