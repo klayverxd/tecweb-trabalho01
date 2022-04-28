@@ -100,6 +100,14 @@ video {
 	padding: 10px 28px;
 }
 
+.main-action{
+	text-decoration: none;
+	color: black;
+} 
+.main-action:hover{
+    color: red;
+}
+
 #logo {
 	width: 140px;
 }
