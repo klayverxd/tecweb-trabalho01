@@ -156,7 +156,14 @@ body {
 .filmesDestaque {
 	display: flex;
 	justify-content: space-between;
-	margin: 20px 0px;
+	margin: 20px 0px;	
+}
+
+#img{
+	transition: transform 100ms ease-in-out;
+}
+#img:hover{
+	transform: scale(1.05);
 }
 
 .carregar {
