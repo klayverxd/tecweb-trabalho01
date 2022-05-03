@@ -156,7 +156,13 @@ body {
 .filmesDestaque {
 	display: flex;
 	justify-content: space-between;
+	overflow-x: scroll;
 	margin: 20px 0px;
+}
+
+.filmesDestaque img {
+	margin-right: 20px;
+	margin-bottom: 10px;
 }
 
 #img {
