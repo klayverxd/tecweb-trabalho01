@@ -120,10 +120,6 @@ video {
 	border-color: black;
 }
 
-body {
-	background-color: blue;
-}
-
 .lancamentos {
 	background-color: rgb(218, 218, 218);
 }
@@ -144,7 +140,6 @@ body {
 }
 
 .section-emDestaque {
-	background-color: #fff;
 	padding: 20px 100px;
 }
 
@@ -233,6 +228,10 @@ body {
 	background-color: white;
 }
 
+.novidades .avaliacao:last-child {
+	border: 0;
+}
+
 .avaliacao {
 	display: flex;
 	padding-top: 20px;
@@ -243,6 +242,18 @@ body {
 
 .avaliacao div {
 	padding-left: 20px;
+}
+
+.avaliacao div {
+	padding-left: 20px;
+}
+
+.av-card {
+	background-color: rgb(218, 218, 218);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px 140px;
 }
 
 .sobre {
@@ -284,4 +295,8 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px 100px;
+}
+
+footer p,
+footer img {
 }
