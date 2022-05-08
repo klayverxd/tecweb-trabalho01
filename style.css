@@ -104,6 +104,7 @@ video {
 	text-decoration: none;
 	color: black;
 }
+
 .main-action:hover {
 	color: red;
 }
@@ -112,60 +113,12 @@ video {
 	width: 140px;
 }
 
-#input-text {
+#input-film {
 	margin-left: 10px;
 	margin-right: 30px;
 	padding: 8px 25px;
 	background-color: rgb(163, 163, 163);
 	border-color: black;
-}
-
-.lancamentos {
-	background-color: rgb(218, 218, 218);
-}
-
-.header-lancamentos {
-	text-align: center;
-	padding-top: 10px;
-}
-
-.container-lancamentos {
-	display: flex;
-	justify-content: space-around;
-	padding: 40px;
-}
-
-.container-lancamentos img {
-	margin-right: 26px;
-}
-
-.section-emDestaque {
-	padding: 20px 100px;
-}
-
-.section-emDestaque header {
-	display: flex;
-	justify-content: space-between;
-}
-
-.filmesDestaque {
-	display: flex;
-	justify-content: space-between;
-	overflow-x: scroll;
-	overflow-y: hidden;
-	margin: 20px 0px;
-}
-
-.filmesDestaque img {
-	margin-right: 20px;
-	margin-bottom: 10px;
-}
-
-#img {
-	transition: transform 100ms ease-in-out;
-}
-#img:hover {
-	transform: scale(1.05);
 }
 
 .carregar {
@@ -186,53 +139,100 @@ video {
 	box-shadow: 0 0 11px rgba(0, 0, 0, 0.2);
 }
 
-.section-ultimasAvaliacoes {
+#lancamentos {
+	background-color: rgb(218, 218, 218);
+}
+
+#lancamentos .header-lancamentos {
+	text-align: center;
+	padding-top: 10px;
+}
+
+#lancamentos .container-lancamentos {
+	display: flex;
+	justify-content: space-around;
+	padding: 40px;
+}
+
+#lancamentos .container-lancamentos img {
+	margin-right: 26px;
+}
+
+#emDestaque {
+	padding: 20px 100px;
+}
+
+#emDestaque header {
+	display: flex;
+	justify-content: space-between;
+}
+
+#emDestaque .filmesDestaque {
+	display: flex;
+	justify-content: space-between;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	margin: 20px 0px;
+}
+
+#emDestaque .filmesDestaque img {
+	margin-right: 20px;
+	margin-bottom: 10px;
+
+	transition: transform 100ms ease-in-out;
+}
+
+#emDestaque .filmesDestaque img:hover {
+	transform: scale(1.05);
+}
+
+#ultimasAvaliacoes {
 	background-color: #fff;
 	padding: 20px 100px;
 }
 
-.cards {
+#ultimasAvaliacoes .cards {
 	display: flex;
 	justify-content: space-between;
 	margin: 20px 0px;
 }
 
-.card {
+#ultimasAvaliacoes .card {
 	display: flex;
 	width: 30%;
 	gap: 15px;
 }
 
-.card img {
+#ultimasAvaliacoes .card img {
 	border-radius: 50%;
 }
 
-.card p {
+#ultimasAvaliacoes .card p {
 	text-align: justify;
 }
 
-.section-makingof {
+#makingof {
 	background-color: rgb(218, 218, 218);
 	padding: 20px 100px;
 }
 
-.cards-videos {
+#makingof .cards-videos {
 	display: flex;
 	justify-content: space-between;
 	margin: 20px 0px;
 }
 
-.novidades {
+#novidades {
 	display: flex;
 	padding: 20px 100px;
 	background-color: white;
 }
 
-.novidades .avaliacao:last-child {
+#novidades .avaliacao:last-child {
 	border: 0;
 }
 
-.avaliacao {
+#novidades .avaliacao {
 	display: flex;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -240,39 +240,11 @@ video {
 	border-color: #6d6d6d;
 }
 
-@media (max-width: 400px){
-	.novidades {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		padding: 0;
-	}
-	.nov div {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-	}
-	.avaliacao div{
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-	}
-	.sobre {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-	}
-	.avaliacao #tags p{
-		display: block;
-		justify-content: center;
-	}
-}
-
-.avaliacao div {
+#novidades .avaliacao div {
 	padding-left: 20px;
 }
 
-.av-card img{
+#novidades .av-card img {
 	background-color: rgb(218, 218, 218);
 	display: flex;
 	justify-content: center;
@@ -281,21 +253,21 @@ video {
 	height: 200px;
 }
 
-.sobre {
+#novidades .sobre {
 	width: 75%;
 	padding-left: 20px;
 }
 
-.topic {
+#novidades .topic {
 	display: flex;
 	align-items: center;
 }
 
-.sobre .topic {
+#novidades .sobre .topic {
 	margin: 20px 0px;
 }
 
-.sobre .topic img {
+#novidades .sobre .topic img {
 	border-radius: 50%;
 	align-items: center;
 	justify-content: center;
@@ -322,6 +294,30 @@ footer {
 	padding: 20px 100px;
 }
 
-footer p,
-footer img {
+@media (max-width: 400px) {
+	#novidades {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		padding: 0;
+	}
+	.container-novidades div {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.avaliacao div {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.sobre {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.avaliacao #tags p {
+		display: block;
+		justify-content: center;
+	}
 }

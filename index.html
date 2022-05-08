@@ -16,11 +16,11 @@
 				<a class="main-action" href="#ultimasAvaliacoes">avaliações</a> |
 				<a class="main-action" href="#makingof">entrevistas & makingof</a> |
 				<a class="main-action" href="#novidades">novidades</a>
-				<input type="text" placeholder="🔎 Pesquisar filmes" id="input-text" />
+				<input type="text" placeholder="🔎 Pesquisar filmes" id="input-film" />
 			</nav>
 		</header>
-		<body>
-			<section class="lancamentos" id="lancamentos">
+		<main>
+			<section id="lancamentos">
 				<header class="header-lancamentos">
 					<h1>Lançamentos</h1>
 				</header>
@@ -46,7 +46,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="section-emDestaque" id="emDestaque">
+			<section id="emDestaque">
 				<header>
 					<h1>Em destaque</h1>
 					<select name="" id="">
@@ -65,7 +65,7 @@
 					<button class="botao-carregar">+ Carregar mais filmes</button>
 				</div>
 			</section>
-			<section class="section-ultimasAvaliacoes" id="ultimasAvaliacoes">
+			<section id="ultimasAvaliacoes">
 				<h1>Últimas avaliações</h1>
 				<div class="cards">
 					<div class="card">
@@ -115,12 +115,10 @@
 					<button class="botao-carregar">+ Carregar mais avaliações</button>
 				</div>
 			</section>
-			<section class="section-makingof" id="makingof">
-				<header class="header-makingof">
-					<h1>Entrevistas & Making of</h1>
-				</header>
+			<section id="makingof">
+				<h1>Entrevistas & Making of</h1>
 				<div class="cards-videos">
-					<div class="card-video">
+					<div >
 						<img
 							src="./assets/entrevistas/entrevista1.jpg"
 							height="160px"
@@ -132,7 +130,7 @@
 						<p><strong>Roteirista: </strong> Nome do Roteirista</p>
 						<p><strong>Estreia: </strong>2022</p>
 					</div>
-					<div class="card-video">
+					<div >
 						<img
 							src="./assets/entrevistas/entrevista2.jpg"
 							height="160px"
@@ -144,7 +142,7 @@
 						<p><strong>Roteirista: </strong> Nome do Roteirista</p>
 						<p><strong>Estreia: </strong>2022</p>
 					</div>
-					<div class="card-video">
+					<div >
 						<img
 							src="./assets/entrevistas/entrevista3.jpg"
 							height="160px"
@@ -161,8 +159,8 @@
 					<button class="botao-carregar">+ Carregar mais filmes</button>
 				</div>
 			</section>
-			<section class="novidades" id="novidades">
-				<div class="nov">
+			<section id="novidades">
+				<div class="container-novidades">
 					<h1>Novidades</h1>
 					<div class="">
 						<div class="avaliacao">
@@ -256,7 +254,7 @@
 					</div>
 				</div>
 			</section>
-		</body>
+		</main>
 		<footer>
 			<p>
 				Copyright 2021 - Disciplina de Tecnologias WEB - <strong>UFC</strong>
