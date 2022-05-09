@@ -11,10 +11,10 @@
 		<header class="main-header">
 			<img src="./assets/logo.png" alt="logo" id="logo" />
 			<nav>
-				<a class="main-action" href="#lancamentos">lançamentos</a> |
-				<a class="main-action" href="#emDestaque">em destaque</a> |
-				<a class="main-action" href="#ultimasAvaliacoes">avaliações</a> |
-				<a class="main-action" href="#makingof">entrevistas & makingof</a> |
+				<a class="main-action" href="#lancamentos">lançamentos</a><span id="pipe"></span>
+				<a class="main-action" href="#emDestaque">em destaque</a><span id="pipe"></span>
+				<a class="main-action" href="#ultimasAvaliacoes">avaliações</a><span id="pipe"></span>
+				<a class="main-action" href="#makingof">entrevistas & makingof</a><span id="pipe"></span>
 				<a class="main-action" href="#novidades">novidades</a>
 				<input type="text" placeholder="🔎 Pesquisar filmes" id="input-film" />
 			</nav>
@@ -25,7 +25,7 @@
 					<h1>Lançamentos</h1>
 				</header>
 				<div class="container-lancamentos">
-					<img src="./assets/capa-filmes/capa-filme.jpg" alt="qwdqw" />
+					<img src="./assets/capa-filmes/capa-filme.jpg" alt="filme capa" />
 					<div class="content-lancamentos">
 						<h3>Pokemón Go</h3>
 						<p>
@@ -118,7 +118,7 @@
 			<section id="makingof">
 				<h1>Entrevistas & Making of</h1>
 				<div class="cards-videos">
-					<div >
+					<div class="card-video">
 						<img
 							src="./assets/entrevistas/entrevista1.jpg"
 							height="160px"
@@ -130,7 +130,7 @@
 						<p><strong>Roteirista: </strong> Nome do Roteirista</p>
 						<p><strong>Estreia: </strong>2022</p>
 					</div>
-					<div >
+					<div class="card-video">
 						<img
 							src="./assets/entrevistas/entrevista2.jpg"
 							height="160px"
@@ -142,7 +142,7 @@
 						<p><strong>Roteirista: </strong> Nome do Roteirista</p>
 						<p><strong>Estreia: </strong>2022</p>
 					</div>
-					<div >
+					<div class="card-video">
 						<img
 							src="./assets/entrevistas/entrevista3.jpg"
 							height="160px"

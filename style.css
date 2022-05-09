@@ -97,7 +97,12 @@ video {
 	justify-content: space-between;
 	align-items: center;
 	background-color: rgb(163, 163, 163);
-	padding: 10px 28px;
+	padding: 2vh 2vw;
+}
+
+#pipe {
+	border-right: 1px solid black;
+	margin-left: 5px;
 }
 
 .main-action {
@@ -141,25 +146,31 @@ video {
 
 #lancamentos {
 	background-color: rgb(218, 218, 218);
+	padding: 3vh 4vw;
 }
 
 #lancamentos .header-lancamentos {
 	text-align: center;
-	padding-top: 10px;
+	margin-bottom: 20px;
 }
 
 #lancamentos .container-lancamentos {
 	display: flex;
+	flex-direction: row;
 	justify-content: space-around;
-	padding: 40px;
 }
 
 #lancamentos .container-lancamentos img {
-	margin-right: 26px;
+	height: auto;
+}
+
+#lancamentos .content-lancamentos {
+	margin-left: 26px;
+	width: 50%;
 }
 
 #emDestaque {
-	padding: 20px 100px;
+	padding: 3vh 7vw;
 }
 
 #emDestaque header {
@@ -188,16 +199,19 @@ video {
 
 #ultimasAvaliacoes {
 	background-color: #fff;
-	padding: 20px 100px;
+	padding: 3vh 7vw;
 }
 
 #ultimasAvaliacoes .cards {
 	display: flex;
 	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
 	margin: 20px 0px;
 }
 
-#ultimasAvaliacoes .card {
+#ultimasAvaliacoes .cards .card {
 	display: flex;
 	width: 30%;
 	gap: 15px;
@@ -213,18 +227,26 @@ video {
 
 #makingof {
 	background-color: rgb(218, 218, 218);
-	padding: 20px 100px;
+	padding: 3vh 7vw;
 }
 
 #makingof .cards-videos {
 	display: flex;
 	justify-content: space-between;
+	align-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
 	margin: 20px 0px;
+}
+
+#makingof .card-videos {
+	display: flex;
+	justify-content: center;
 }
 
 #novidades {
 	display: flex;
-	padding: 20px 100px;
+	padding: 3vh 7vw;
 	background-color: white;
 }
 
@@ -291,31 +313,78 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px 100px;
+	padding: 2vh 2vw;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1000px) {
+	.main-header nav a,
+	.main-header nav #pipe {
+		display: none;
+	}
+
+	#lancamentos .container-lancamentos {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	#lancamentos .container-lancamentos img {
+		margin-bottom: 20px;
+	}
+
+	#lancamentos .container-lancamentos .content-lancamentos {
+		margin-left: 0px;
+		width: 100%;
+	}
+
+	#lancamentos .content-lancamentos {
+		margin-left: 26px;
+		width: 50%;
+	}
+
 	#novidades {
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
 		padding: 0;
 	}
+
+	#ultimasAvaliacoes .cards {
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	#ultimasAvaliacoes .cards .card {
+		display: flex;
+		width: 90%;
+		margin-bottom: 10px;
+	}
+
+	#makingof .cards-videos {
+		flex-direction: column;
+	}
+
+	#makingof .cards-videos .card-video {
+		margin-bottom: 10px;
+	}
+
 	.container-novidades div {
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
 	}
+
 	.avaliacao div {
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
 	}
+
 	.sobre {
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
 	}
+
 	.avaliacao #tags p {
 		display: block;
 		justify-content: center;
