@@ -322,6 +322,10 @@ footer {
 		display: none;
 	}
 
+	#input-film {
+		margin: 0px;
+	}
+
 	#lancamentos .container-lancamentos {
 		flex-direction: column;
 		width: 100%;
